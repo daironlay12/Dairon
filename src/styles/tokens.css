@@ -1,0 +1,83 @@
+/*
+  D-Lay Prestige — design tokens.
+  Palette, type and spacing are the single source of truth; every component
+  reads from these custom properties rather than hard-coding values.
+*/
+
+:root {
+  /* ---------- Color ---------- */
+  --ink: #05070a;
+  --midnight: #0a0e14;
+  --navy-deep: #0f1b2e;
+  --navy-panel: #131d2c;
+  --charcoal: #1c1f24;
+  --platinum: #c9cdd3;
+  --platinum-dim: rgba(201, 205, 211, 0.55);
+  --champagne: #c9a868;
+  --champagne-bright: #e4c989;
+  --champagne-dim: rgba(201, 168, 104, 0.35);
+  --porcelain: #f5f3ee;
+  --porcelain-dim: rgba(245, 243, 238, 0.68);
+  --porcelain-faint: rgba(245, 243, 238, 0.4);
+  --hairline: rgba(201, 205, 211, 0.14);
+  --hairline-strong: rgba(201, 205, 211, 0.28);
+
+  /* ---------- Type ---------- */
+  --font-display: "Fraunces Variable", "Iowan Old Style", serif;
+  --font-body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+
+  --text-eyebrow: 0.6875rem;
+  --text-caption: 0.8125rem;
+  --text-body: 1rem;
+  --text-lead: clamp(1.1rem, 1.4vw, 1.375rem);
+  --text-h3: clamp(1.5rem, 2.4vw, 2rem);
+  --text-h2: clamp(2.25rem, 4.2vw, 3.5rem);
+  --display-sm: clamp(2.5rem, 5vw, 4rem);
+  --display-md: clamp(3.25rem, 7vw, 6rem);
+  --display-lg: clamp(3.5rem, 10vw, 9rem);
+  --stat-number: clamp(3.5rem, 9vw, 7.5rem);
+
+  --tracking-wide: 0.22em;
+  --tracking-mid: 0.08em;
+  --leading-tight: 1.04;
+  --leading-snug: 1.25;
+  --leading-body: 1.6;
+
+  /* ---------- Spacing ---------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3.5rem;
+  --space-xl: 6rem;
+  --space-2xl: 9rem;
+  --space-3xl: 13rem;
+
+  --content-max: 84rem;
+  --content-narrow: 46rem;
+  --edge: clamp(1.5rem, 6vw, 6rem);
+
+  /* ---------- Shape / motion ---------- */
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-card: 20px;
+  --ease-prestige: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-slow: 900ms;
+  --duration-mid: 500ms;
+  --duration-fast: 260ms;
+
+  --shadow-panel: 0 40px 90px -30px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 60px 120px -40px rgba(0, 0, 0, 0.75),
+    0 0 80px -20px var(--champagne-dim);
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-slow: 1ms;
+    --duration-mid: 1ms;
+    --duration-fast: 1ms;
+  }
+}

@@ -1,0 +1,107 @@
+.results-experience {
+  padding-block: var(--space-3xl);
+  background: var(--midnight);
+}
+
+.results-experience__title {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+  font-size: var(--text-h2);
+  max-width: var(--content-narrow);
+}
+
+.results-experience__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: var(--space-2xl);
+}
+
+.results-experience__number {
+  font-family: var(--font-display);
+  font-size: var(--stat-number);
+  color: var(--champagne-bright);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.results-experience__label {
+  margin-top: var(--space-2xs);
+  color: var(--porcelain-dim);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-mid);
+  text-transform: uppercase;
+}
+
+.results-experience__comparison-label {
+  color: var(--champagne);
+  font-size: var(--text-eyebrow);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.results-experience__compare-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.results-experience__compare-tag {
+  color: var(--porcelain-dim);
+  font-size: var(--text-caption);
+  margin-bottom: var(--space-2xs);
+}
+
+.results-experience__compare-number {
+  font-family: var(--font-display);
+  font-size: var(--display-md);
+  color: var(--platinum);
+  line-height: 1;
+}
+
+.results-experience__compare-number--before {
+  color: var(--porcelain-dim);
+}
+
+.results-experience__compare-divider {
+  width: 3.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--hairline-strong), var(--champagne));
+}
+
+.results-experience__notes {
+  margin: var(--space-lg) 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  color: var(--porcelain-dim);
+  font-size: var(--text-caption);
+}
+
+.results-experience__notes li {
+  position: relative;
+  padding-left: var(--space-sm);
+}
+
+.results-experience__notes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 1px;
+  background: var(--champagne);
+}
+
+@media (max-width: 720px) {
+  .results-experience__stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
