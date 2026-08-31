@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python bytecode cache (from running skill scripts, e.g. ui-ux-pro-max search.py)
+__pycache__/
+*.pyc
